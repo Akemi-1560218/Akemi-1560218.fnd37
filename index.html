@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  <script type="text/javascript" src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>車両価格（参考）</title>
 </head>
 
 <body>
-  <h1>DIG プログラミング基礎へようこそ！</h1>
-  <h2>Mac をお使いの方は、 <font color="blue"> Cmd + Option + J</font><br>
-    Windows/Linux をお使いの方は、 <font color="blue"> Control+Shift+J</font> <br>
-    をクリックして、デベロッパーツールを開いてください。</h2>
-  <h2>下記にユニコーンの画像が表示されていれば成功です！</h2>
-  <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif">
-  <h3>30分悩んで進まなくなったら…helpチャンネルで質問してみましょう！</h3>
-</body>
+  <div class="container">
+    <!-- 水色の四角 -->
+    <div class="lightblue-square">
+      <input type="string" id="selectionString" placeholder="車種を入力">
+      <button id="searchButton">検索</button>
+    </div>
+   
+    <!-- 青色の四角 -->
+    <div class="blue-square">
+      <p id="output">車両参考価格</p>
+    </div>
+  </div>
+  
+  <!-- 車種リスト -->
+  <div class="center-container">
+    <h2>車両リスト</h2>
+ 
+      <ul>
+        <li>アルファード</li>
+        <li>カローラ</li>
+        <li>クラウン</li>
+        <li>プリウス</li>
+        <li>bZ4X</li>
+        <li>RAV4</li>
+        <li>シエンタ</li>
+        <li>アクア</li>
+      </ul>
 
+  <link rel="stylesheet" href="presentation.css">
+  <script src="presentation.js"></script>
+</body>
 </html>
